@@ -1,0 +1,369 @@
+.home-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #6a4c93 0%, #9a7dbb 100%);
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline;
+  background-color: white;
+  color: #6a4c93;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  margin: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+}
+
+/* Features Section */
+.features {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.features h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card i {
+  font-size: 2.5rem;
+  color: #6a4c93;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Categories Section */
+.categories {
+  padding: 5rem 0;
+}
+
+.categories h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.category-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  background: #6a4c93;
+  transform: translateY(-5px);
+}
+
+.category-card i {
+  font-size: 3rem;
+  color: #6a4c93;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.category-card:hover i {
+  color: white;
+}
+
+.category-card h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.category-card:hover h3 {
+  color: white;
+}
+
+/* Health Tips Section */
+.health-tips {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.health-tips h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tip-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+.tip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tip-card h3 {
+  color: #333;
+  padding: 1.5rem 1.5rem 0.5rem;
+  font-size: 1.3rem;
+}
+
+.tip-card p {
+  color: #666;
+  padding: 0 1.5rem 1rem;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  color: #6a4c93;
+  text-decoration: none;
+  padding: 0 1.5rem 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #9a7dbb;
+}
+
+/* Newsletter Section */
+.newsletter {
+  padding: 5rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, #6a4c93 0%, #9a7dbb 100%);
+  color: white;
+}
+
+.newsletter h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.newsletter p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-align: center;
+  box-sizing: border-box;
+  min-width: 200px;
+  width: auto;
+  max-width: 300px;
+  transition: width 0.3s ease;
+}
+.newsletter-form input:focus,
+.newsletter-form input:not(:placeholder-shown) {
+  width: 300px; /* Expands when text is entered or input is focused */
+}
+.newsletter-form button {
+  background-color: white;
+  color: #6a4c93;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-form button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+
+.featured-products {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+.featured-products h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+}
+
+.product-card h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card .description {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.product-card .price {
+  color: #6a4c93;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.add-to-cart-btn {
+  background-color: #6a4c93;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #9a7dbb;
+} 

@@ -7,13 +7,35 @@
   height: auto;
 }
 
- body {
-  width: 100%;
- 
-  font-family: Arial, sans-serif;
-  background-color: #fceefb;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
   color: #333;
+  width: 100%;
+  background-color: #fceefb;
   overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Header */
