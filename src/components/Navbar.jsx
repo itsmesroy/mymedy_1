@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../context/CartContext';
 import './Navbar.css';
 
-const Navbar = ({ cartCount }) => {
+const Navbar = () => {
+  const { cartItems } = useContext(CartContext);
+  const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">

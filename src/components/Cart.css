@@ -86,6 +86,15 @@
   gap: 1rem;
 }
 
+.quantity-controls span, .quantity {
+  background: none;
+  color: #6a4c93;
+  border-radius: 0;
+  padding: 0 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 .quantity-btn {
   background: none;
   border: 2px solid #6a4c93;
